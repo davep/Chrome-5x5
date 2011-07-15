@@ -69,7 +69,7 @@ function gameState()
 
    if ( getMoves() > 0 )
    {
-      forEachCell( function( row, col ) { game[ row ][ col ] = localStorage[ "cell" + row + col ] == "true" } );
+      forEachCell( function( row, col ) { game[ row ][ col ] = localStorage[ "cell" + row + col ] == "true"; } );
    }
 
    return game;
@@ -84,7 +84,7 @@ function setCell( row, col, on )
 /* Refresh the grid based on the current game state. */
 function refreshGrid( gameState )
 {
-   forEachCell( function( row, col ) { setCell( row, col, gameState[ row ][ col ] ) } );
+   forEachCell( function( row, col ) { setCell( row, col, gameState[ row ][ col ] ); } );
 }
 
 /* Get the count of cells switched on. */
