@@ -1,0 +1,14 @@
+{
+    "name" : "5x5",
+    "description" : "Simple little puzzle",
+    "version" : "1.3",
+    "app" : {
+        "launch" : {
+            "local_path" : "5x5.html"
+        }
+    },
+    "icons" : {
+        "16" : "5x5_16.png",
+        "128" : "5x5_128.png"
+    }
+}

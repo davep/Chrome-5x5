@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <title>5x5</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="5x5.css" />
+    <script type="text/javascript" src="5x5.js"></script>
+  </head>
+
+  <body onload="init5x5();">
+
+    <p id="title">
+      <h2>5x5</h2>
+    </p>
+
+    <p id="moves"></p>
+    <table class="board5x5">
+      <tr><td class="cellOff" id="cell00" onclick="cellClick( 0, 0 );"></td><td class="cellOff" id="cell01" onclick="cellClick( 0, 1 );"></td><td class="cellOff" id="cell02" onclick="cellClick( 0, 2 );"></td><td class="cellOff" id="cell03" onclick="cellClick( 0, 3 );"></td><td class="cellOff" id="cell04" onclick="cellClick( 0, 4 );"></td></tr>
+      <tr><td class="cellOff" id="cell10" onclick="cellClick( 1, 0 );"></td><td class="cellOff" id="cell11" onclick="cellClick( 1, 1 );"></td><td class="cellOff" id="cell12" onclick="cellClick( 1, 2 );"></td><td class="cellOff" id="cell13" onclick="cellClick( 1, 3 );"></td><td class="cellOff" id="cell14" onclick="cellClick( 1, 4 );"></td></tr>
+      <tr><td class="cellOff" id="cell20" onclick="cellClick( 2, 0 );"></td><td class="cellOff" id="cell21" onclick="cellClick( 2, 1 );"></td><td class="cellOff" id="cell22" onclick="cellClick( 2, 2 );"></td><td class="cellOff" id="cell23" onclick="cellClick( 2, 3 );"></td><td class="cellOff" id="cell24" onclick="cellClick( 2, 4 );"></td></tr>
+      <tr><td class="cellOff" id="cell30" onclick="cellClick( 3, 0 );"></td><td class="cellOff" id="cell31" onclick="cellClick( 3, 1 );"></td><td class="cellOff" id="cell32" onclick="cellClick( 3, 2 );"></td><td class="cellOff" id="cell33" onclick="cellClick( 3, 3 );"></td><td class="cellOff" id="cell34" onclick="cellClick( 3, 4 );"></td></tr>
+      <tr><td class="cellOff" id="cell40" onclick="cellClick( 4, 0 );"></td><td class="cellOff" id="cell41" onclick="cellClick( 4, 1 );"></td><td class="cellOff" id="cell42" onclick="cellClick( 4, 2 );"></td><td class="cellOff" id="cell43" onclick="cellClick( 4, 3 );"></td><td class="cellOff" id="cell44" onclick="cellClick( 4, 4 );"></td></tr>
+    </table>
+
+    <p id="buttons">
+      <a href="#" onclick="resetGame(); return false;">Reset Game</a>&nbsp;|&nbsp;<a href="#" onclick="showHelp(); return false;">Help</a>
+    </p>
+    
+  </body>
+
+</html>
