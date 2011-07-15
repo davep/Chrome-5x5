@@ -29,7 +29,7 @@ function getMoves()
 /* Save the state of the game to local storage. */
 function saveGame( game, moves )
 {
-   forEachCell( function( row, col ) { localStorage[ "cell" + row + col ] = game[ row ][ col ] } );
+   forEachCell( function( row, col ) { localStorage[ "cell" + row + col ] = game[ row ][ col ]; } );
    localStorage.moves = moves;
    stateUpdated();
 }
@@ -130,7 +130,7 @@ function showHelp()
    alert( "The object of the game is to totally fill the grid with black squares. " +
           "Clicking on a square results in that square (and those around it as " +
           "seen in the initial pattern when you reset the game) toggling its colour.\n\n" +
-          "There is a solution in 14 moves. Can you find it without cheating?" )
+          "There is a solution in 14 moves. Can you find it without cheating?" );
 }
 
 /* Help keep all tabs of the same game in sync. */
