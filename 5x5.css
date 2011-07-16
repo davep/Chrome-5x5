@@ -2,7 +2,7 @@ body {
   font-family: sans-serif;
 }
 
-p, h2 {
+p, header {
   text-align: center;
 }
 
@@ -23,16 +23,39 @@ td.cellOn {
   color: inherit;
 }
 
+td.cellOn:hover {
+  background: #202020;
+  color: inherit;
+}
+
 td.cellOff {
   background: #c0c0c0;
   color: inherit;
 }
 
-p#buttons a, p#buttons a:visited, p#buttons a:hover, p#buttons a:focus, p#buttons a:active {
+td.cellOff:hover {
+  background: #b0b0b0;
+  color: inherit;
+}
+
+p#buttons a, p#buttons a:visited, p#buttons a:focus, p#buttons a:active {
   color: #000000;
   background: #eeeeee;
   border: solid 1px #222222;
   padding-left: 1ex;
   padding-right: 1ex;
   text-decoration: none;
+}
+
+p#buttons a:hover {  
+  color: inherit;
+  background: #cccccc;
+}
+
+nav a, nav a:visited, nav a:hover, nav a:focus, nav a:active {
+  color: #555555;
+  background: inherit;
+  text-decoration: none;
+  font-size: 60%;
+  text-align: center;
 }

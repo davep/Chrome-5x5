@@ -1,4 +1,3 @@
-
 /* Do Something for each cell in the game. */
 function forEachCell( f )
 {
