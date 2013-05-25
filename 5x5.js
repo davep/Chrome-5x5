@@ -1,9 +1,9 @@
 /* Do Something for each cell in the game. */
 function forEachCell( f )
 {
-   for ( row = 0; row < 5; row++ )
+   for ( var row = 0; row < 5; row++ )
    {
-      for ( col = 0; col < 5; col++ )
+      for ( var col = 0; col < 5; col++ )
       {
          f( row, col );
       }
